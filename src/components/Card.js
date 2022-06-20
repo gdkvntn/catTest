@@ -99,12 +99,16 @@ const Footer = styled.div`
   margin-top: 14px;
   text-align: center;
   color: #fff;
-  a {
+  button {
     color: #1698d9;
     text-decoration: none;
+    padding: 0;
+    border: none;
     border-bottom: 1px dashed #1698d9;
+    background-color: transparent;
+    cursor: pointer;
   }
-  a:hover {
+  button:hover {
     color: #2ea8e6;
   }
 `;
@@ -142,10 +146,7 @@ export default function Card(props) {
       <Footer>
         <span>
           Чего сидишь? Порадуй котэ,{" "}
-          <a href="#" onClick={props.selected}>
-            купить
-          </a>
-          .
+          <button onClick={props.selected}>купить</button>.
         </span>
       </Footer>
     </>
